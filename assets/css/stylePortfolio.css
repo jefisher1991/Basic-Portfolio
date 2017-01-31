@@ -1,0 +1,221 @@
+
+#body 
+  {
+    width: 960px; 
+    height: 960px;
+    font-size:24px;
+    line-height: 24px; 
+      /*line-height=space between text lines*/
+    color: #000000;
+      /*color of the text*/
+    font-family: Helvetica;
+      /*font of the text*/
+  }
+
+
+.Header 
+  {
+
+    float:left;
+      /*keeps the header to the left */
+    position: absolute;
+      /*unknown*/
+    font-size:30px;
+      /*size of the font*/
+    text-align: center;
+      /*aligns the text to the center*/
+    color:white;
+      /*color of the text*/
+    background-color:#4aaaa5;
+      /*background color of this container*/
+    padding: 20px;
+      /*space around the content- confused as to why this bumps the "about me section".*/
+    margin-left: 50px;
+      /*controling the margin on either side of the header- aka, how far it is from the sides*/
+    margin-right:100px;
+      /*controling the margin on either side of the header- aka, how far it is from the sides*/
+    margin-top: 37px;
+     /*controling the margin on either side of the header- aka, how far it is from the sides*/
+  }
+
+#navbar{ 
+  position: static;
+  list-style-type:none;
+  margin-top: 50px;
+  margin-right:200px;
+  padding: 0;
+  float:right;
+  max-width: 960px;
+
+    }
+
+.navlink
+{color:#777777;
+text-decoration: none;
+padding-left:11px;
+padding-right:2px;
+margin-left:10px
+margin-right:10px;
+font-size: 18px;
+border-right-color: #cccccc;
+border-right-style: solid;
+border-right-width: 2px; }
+
+#special
+  { 
+    font-weight: bold}
+
+
+.header1 
+  {
+    z-index: 5;
+    font-size: 24px;
+      /*controls the font size for the About Me header*/
+    font-weight: bolder; 
+      /*controls the bold level for the About Me header*/
+      text-align: center;
+    margin-top: 20px;
+    padding-bottom:20px;
+  }
+
+.largeportfoliobox
+  {
+    float:left;
+      /*controls it floating in the page, however, very small adjustment from left to right*/
+    clear: both;
+    color:#777777;
+      /*text color of container*/
+    background-color:white;
+      /*background color of container*/
+    height:800px;
+      /*controls height of the container*/
+    width:500px;
+      /*controls width of container*/
+
+    margin-top:50px;
+      /*controls margin from top of page*/
+    margin-left:50px;
+    text-align: left;
+      /*how text is aligned in container*/
+    border-style: solid;
+      /*border Style*/
+    border-width: 2px; 
+      /*border thickness*/
+    border-color: #cccccc;
+      /*border color*/
+    overflow:scroll
+      /*creates a scrollable text box if the text is larger than the container height and width.*/
+  }
+.portfolioboxleft
+{
+    float:left;
+    color:#777777;
+      /*text color of container*/
+    background-color:white;
+      /*background color of container*/
+    height:100px;
+      /*controls height of the container*/
+    width: 200px;
+      /*controls width of container*/
+
+    margin-top: 10px;
+      /*controls margin from top of page*/
+    margin-left:20px;
+    text-align: left;
+      /*how text is aligned in container*/
+    border-style: solid;
+      /*border Style*/
+    border-width: 2px; 
+      /*border thickness*/
+    border-color: #cccccc;
+      /*border color*/
+ 
+  }
+  .portfoliobox
+{
+    float:right;
+    color:#777777;
+      /*text color of container*/
+    background-color:white;
+      /*background color of container*/
+    height:100px;
+      /*controls height of the container*/
+    width: 200px;
+      /*controls width of container*/
+
+    margin-top: 10px;
+      /*controls margin from top of page*/
+    margin-left:10px;
+    margin-right:20px;
+    text-align: left;
+      /*how text is aligned in container*/
+    border-style: solid;
+      /*border Style*/
+    border-width: 2px; 
+      /*border thickness*/
+    border-color: #cccccc;
+      /*border color*/
+  
+  }
+.countryname 
+  {
+    position:absolute;
+    margin-top:50px;
+    font-size: 18px;
+    width:200px;
+    height:40px;
+    text-align:left;
+    float:left;
+    color:white;
+    text-align:center;
+      /*color of the text*/
+    background-color:#4aaaa5;
+      /*background color of this container*/
+    clear:both;
+  }
+
+.p
+  {position:relative;
+    font-size: 12px;
+    text-align:left
+    margin:10px;}
+
+  .p {}
+.textformatting {border-top-color: #4aaaa5;
+                  border-top-style: solid; 
+                  border-top-width: 2px;}
+#bg
+  { 
+    z-index: -1;
+    /*sent the background behind the image/text box*/
+    width: 100%;
+    height: auto;
+      /*controls the height and width of the background*/
+
+    position: absolute;
+      /*makes sure background doesn't move even when scrolling*/
+    margin-top: 100px;
+    margin-left:0px;
+     /*margin from the left*/
+    margin-right:0px;
+      /*margin from the right*/
+    border-top-style: solid;
+    border-top-width:2px;
+    border-top-color:#4aaaa5;
+      /*controls the top border on the background*/
+  }
+
+  #footer 
+  {
+    height:20px;
+    width:100%;
+    background-color: #666666;
+    position:fixed;
+    bottom:0;
+    text-align: center;
+    font-size: 12px;
+    border-top-style:solid;
+    border-top-color:#4aaaa5;
+    border-top-width:2px}
+  }
+

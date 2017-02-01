@@ -1,8 +1,7 @@
 
-#body 
+body 
   {
-    width: 960px; 
-    height: 960px;
+  
     font-size:24px;
     line-height: 24px; 
       /*line-height=space between text lines*/
@@ -10,10 +9,10 @@
       /*color of the text*/
     font-family: Helvetica;
       /*font of the text*/
-      background-image:url(assets/images/cork-wallet.png);
+    background-image: url("../images/cork-wallet.png");
   }
 
-.Header 
+.header 
   {
 
     float:left;
@@ -30,22 +29,21 @@
       /*background color of this container*/
     padding: 20px;
       /*space around the content- confused as to why this bumps the "about me section".*/
-    margin-left: 50px;
+    margin-left: 51px;
       /*controling the margin on either side of the header- aka, how far it is from the sides*/
     margin-right:100px;
       /*controling the margin on either side of the header- aka, how far it is from the sides*/
-    margin-top: 37px;
+    margin-top: 67px;
      /*controling the margin on either side of the header- aka, how far it is from the sides*/
   }
 
 #navbar{ 
-  position: static;
+  position: absolute;
   list-style-type:none;
-  margin-top: 50px;
+  margin-top: 80px;
   margin-right:200px;
-  padding: 0;
+  margin-left:420px;
   float:right;
-  max-width: 960px;
 
     }
 
@@ -54,7 +52,6 @@
 text-decoration: none;
 padding-left:11px;
 padding-right:2px;
-margin-left:10px
 margin-right:10px;
 font-size: 18px;
 border-right-color: #cccccc;
@@ -63,57 +60,27 @@ border-right-width: 2px; }
 
 #me  
   { 
-    position:relative;
-    border-style: solid;
-      /*creates a corder on the outside of the image*/
-    border-color: #4aaaa5;
-    border-width: 1px;
-    margin-left: 5px;
-    /*controling the margin on either side of the header- aka, how far it is from the sides*/
-    margin-right: 10px;
-    /*controling the margin on either side of the header- aka, how far it is from the sides*/
+    background-image: url("../images/jef414-200.jpeg");
     float:left;
-    /*allows the text to sit next to this image (how?) */
+    background-repeat: no-repeat;
+    height:190px;
+    width:150px;
+    position: relative;
+    margin-left: 10px;
+    margin-right:10px;
+    margin-bottom: 5px;
+    /*controling the margin on either side of the header- aka, how far it is from the sides*/
+    margin-top:10px;
+    clear:both;
+    border-style: solid;
+    border-width: 3px;
+    border-color:#4aaaa5;
+
   }   
-
-
-#special
-  { 
-    font-weight: bold}
-.box 
-  {
-    float:right;
-    color:#777777;
-      /*text color*/
-    font-size: 18px;
-      /*font size*/
-    background-color:white;
-      /*background color of the boxes*/
-    
-      /*forces things to shift left*/
-    margin-left: 50px;
-      /*distance between the item and the item next to it*/
-
-    margin-top:55px;
-      /*distance between the item and the item next to it*/
-    margin-bottom: 0px;
-      /*distance between the item and the item next to it*/
-    padding-right: 10px;
-      /*distance between words and border*/
-    text-align: center;
-      /*how the words are aligned*/
-    border-right: solid;
-      /*creates only a right side solid border*/
-    border-width: 2px;
-       /*size of the rigth side border*/
-    border-right-color: #cccccc;
-  }
-
-
 
 .header1 
   {
-    z-index: 5;
+    z-index: 2
     font-size: 24px;
       /*controls the font size for the About Me header*/
     font-weight: bolder; 
@@ -121,38 +88,66 @@ border-right-width: 2px; }
       text-align: center;
     margin-top: 20px;
     padding-bottom:20px;
+    border-bottom-style:double;
+    border-bottom-color: #4aaaa5;
+    border-bottom-width: 2px;
   }
 
 
-
-.AboutMeText
+.mainbody
   {
-    float:left;
-      /*controls it floating in the page, however, very small adjustment from left to right*/
-    clear: both;
+    position:absolute;
+    clear:right;
+    color:#777777;
+      /*text color of container*/
+    background-color:white;
+      /*background color of container*/
+    height:auto;
+      /*controls height of the container*/
+    width:650px;
+      /*controls width of container*/
+    margin-top:130px;
+      /*controls margin from top of page*/
+    margin-left:50px;
+    text-align: left;
+      /*how text is aligned in container*/
+    border-top-style: solid;
+      /*border Style*/
+    border-top-width: 2px; 
+      /*border thickness*/
+    border-top-color: #cccccc;
+      /*border color*/
+    overflow:scroll
+      /*creates a scrollable text box if the text is larger than the container height and width.*/
+  }
+
+  .mainbody1
+  {
+ 
+    position:absolute;
+    clear:right;
     color:#777777;
       /*text color of container*/
     background-color:white;
       /*background color of container*/
     height:400px;
       /*controls height of the container*/
-    width:500px;
+    width:700px;
       /*controls width of container*/
-
-    margin-top:50px;
+    margin-top:130px;
       /*controls margin from top of page*/
     margin-left:50px;
     text-align: left;
       /*how text is aligned in container*/
-    border-style: solid;
+    border-top-style: solid;
       /*border Style*/
-    border-width: 2px; 
+    border-top-width: 2px; 
       /*border thickness*/
-    border-color: #cccccc;
+    border-top-color: #cccccc;
       /*border color*/
     overflow:scroll
-      /*creates a scrollable text box if the text is larger than the container height and width.*/
-  }
+      /*creates a scrollable text box if the text is larger than the container height and width.*/}
+
 #connectwithme
 {
     position:absolute;
@@ -160,14 +155,13 @@ border-right-width: 2px; }
       /*text color of container*/
     background-color:white;
       /*background color of container*/
-    height:300px;
+    height:auto;
       /*controls height of the container*/
-    width: 400px;
+    width: 270px;
       /*controls width of container*/
-
-    margin-top: 150px;
+    margin-top: 130px;
       /*controls margin from top of page*/
-    margin-left:600px;
+    margin-left:740px;
     text-align: left;
       /*how text is aligned in container*/
     border-style: solid;
@@ -185,40 +179,80 @@ border-right-width: 2px; }
   {
     font-size: 12px;
     text-align:left;
-    float:left;
     margin-left:5px;
+    margin-top:10px;
+
   }
 
 
-.textformatting {border-top-color: #4aaaa5;
-                  border-top-style: solid; 
-                  border-top-width: 2px;}
-#bg
-  { 
-    z-index: -1;
-    /*sent the background behind the image/text box*/
-    width: 100%;
-    height: auto;
-      /*controls the height and width of the background*/
+.textformatting {
+  border-top-color: #4aaaa5;
+  border-top-style: solid; 
+  border-top-width: 2px;}
 
-    position: absolute;
-      /*makes sure background doesn't move even when scrolling*/
-    margin-top: 100px;
-    margin-left:0px;
-     /*margin from the left*/
-    margin-right:0px;
-      /*margin from the right*/
-    border-top-style: solid;
-    border-top-width:2px;
-    border-top-color:#4aaaa5;
-      /*controls the top border on the background*/
-  }
+
+/*Contact Form Specific*/
+.contactmeform
+  {
+    float:left;
+      /*controls it floating in the page, however, very small adjustment from left to right*/
+    clear: both;
+    color:#777777;
+      /*text color of container*/
+    background-color:white;
+      /*background color of container*/
+    height:400px;
+      /*controls height of the container*/
+    width:450px;
+      /*controls width of container*/
+
+    margin-top:130px;
+      /*controls margin from top of page*/
+    margin-left:50px;
+    padding-left:25px;
+    padding-top:15px;
+    padding-right:25px;
+    text-align: left;
+      /*how text is aligned in container*/
+    border-style: solid;
+      /*border Style*/
+    border-width: 2px; 
+      /*border thickness*/
+    border-color: #cccccc;
+      /*border color*/
+}
+.fieldformat
+    {width:300px;}
+
+.submitformat
+    {width:80px;
+      font-size: 18px;
+      text-align: center;
+      height:40px;
+    color:white;
+      /*color of the text*/
+    background-color:#4aaaa5;
+      /*background color of this container*/}
+
+.formfields
+  {
+    width:200px;
+    z-index: 5;
+    font-size: 14px;
+      /*controls the font size for the About Me header*/
+    font-weight: bolder; 
+      /*controls the bold level for the About Me header*/
+      text-align: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-bottom:20px; }
 
   #footer 
   {
-    height:20px;
+    height:50px;
     width:100%;
     background-color: #666666;
+    color:#cccccc;
     position:fixed;
     bottom:0;
     text-align: center;
@@ -228,4 +262,259 @@ border-right-width: 2px; }
     border-top-width:2px}
   }
 
-#id=contactmeform
+  /*Portfolio Specific*/
+
+
+  
+  }
+  .portfolioboxleft
+{
+    float:left;
+    color:#777777;
+      /*text color of container*/
+    background-color:white;
+      /*background color of container*/
+    height:100px;
+      /*controls height of the container*/
+    width: 200px;
+      /*controls width of container*/
+
+    margin-top: 10px;
+      /*controls margin from top of page*/
+    margin-left:20px;
+    text-align: left;
+      /*how text is aligned in container*/
+    border-style: solid;
+      /*border Style*/
+    border-width: 2px; 
+      /*border thickness*/
+    border-color: #cccccc;
+      /*border color*/}
+
+  .portfoliobox
+{
+    float:right;
+    color:#777777;
+      /*text color of container*/
+    background-color:white;
+      /*background color of container*/
+    height:100px;
+      /*controls height of the container*/
+    width: 200px;
+      /*controls width of container*/
+
+    margin-top: 10px;
+      /*controls margin from top of page*/
+    margin-left:10px;
+    margin-right:20px;
+    text-align: left;
+      /*how text is aligned in container*/
+    border-style: solid;
+      /*border Style*/
+    border-width: 2px; 
+      /*border thickness*/
+    border-color: #cccccc;
+      /*border color*/
+    }
+
+.countryname 
+  {
+    position:absolute;
+    margin-top:110px;
+    font-size: 18px;
+    width:200px;
+    height:40px;
+    text-align:left;
+    float:left;
+    color:white;
+    text-align:center;
+      /*color of the text*/
+    background-color:#4aaaa5;
+      /*background color of this container*/
+    clear:both;
+  }
+
+#brazil{ 
+  
+  background-image: url("../images/IMG_0609.jpg");
+  background-size:contain;
+  transform:scale(20%);
+  float:left;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 150px;
+  position: relative;
+  margin-left: 10px;
+  margin-right:10px;
+  margin-bottom: 5px;
+  margin-top:10px;
+  clear:both;
+  border-style: solid;
+  border-width: 3px;
+  border-color:#4aaaa5;
+  }   
+
+
+#ireland {
+  background-image: url("../images/IMGP8190.JPG");
+  background-size:contain;
+  float:left;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 150px;
+  position: relative;
+  margin-left: 10px;
+  margin-right:10px;
+  margin-bottom: 5px;
+  margin-top:10px;
+  clear:both;
+  border-style: solid;
+  border-width: 3px;
+  border-color:#4aaaa5;
+  
+  }   
+
+
+#mexico {
+  background-image: url("../images/IMG_1213.jpg");
+  background-size:contain;
+  transform:scale(20%);
+  float:right;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  margin-left: 10px;
+  margin-right:10px;
+  margin-bottom: 5px;
+  margin-top:10px;
+  border-style: solid;
+  border-width: 3px;
+  border-color:#4aaaa5;
+  }   
+
+  #poland {
+  background-image: url("../images/imgp6640.jpg");
+  background-size:contain;
+  transform:scale(20%);
+  float:left;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 150px;
+  position: relative;
+  margin-left: 10px;
+  margin-right:10px;
+  margin-bottom: 5px;
+  margin-top:10px;
+  clear:both;
+  border-style: solid;
+  border-width: 3px;
+  border-color:#4aaaa5;
+  clear:right;
+
+  }   
+
+  #hungary{
+  background-image: url("../images/imgp6538.jpg");
+  background-size:contain;
+  transform:scale(20%);
+  float:left;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 150px;
+  position: relative;
+  margin-left: 10px;
+  margin-right:10px;
+  margin-bottom: 5px;
+  margin-top:10px;
+  clear:both;
+  border-style: solid;
+  border-width: 3px;
+  border-color:#4aaaa5;
+  clear:right;
+
+  } 
+
+  #czrepublic{
+  background-image: url("../images/img_0844.jpg");
+  background-size:contain;
+  transform:scale(20%);
+  float:left;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 150px;
+  position: relative;
+  margin-left: 10px;
+  margin-right:10px;
+  margin-bottom: 5px;
+  margin-top:10px;
+  clear:both;
+  border-style: solid;
+  border-width: 3px;
+  border-color:#4aaaa5;
+  clear:both;
+
+  }     
+
+  #austria{
+  background-image: url("../images/imgp6336.jpg");
+  background-size:contain;
+  transform:scale(20%);
+  float:right;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  margin-left: 10px;
+  margin-right:10px;
+  margin-bottom: 5px;
+  margin-top:10px;
+  clear:both;
+  border-style: solid;
+  border-width: 3px;
+  border-color:#4aaaa5;
+  
+   
+}
+
+  #germany{
+  background-image: url("../images/imgp5918.jpg");
+  background-size:contain;
+  transform:scale(20%);
+  float:left;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  margin-left: 10px;
+  margin-right:10px;
+  margin-bottom: 5px;
+  margin-top:10px;
+  clear:left;
+  border-style: solid;
+  border-width: 3px;
+  border-color:#4aaaa5;
+  clear:left;
+
+  }   
+
+  #hungary{
+  background-image: url("../images/imgp6538.jpg");
+  background-size:contain;
+  transform:scale(20%);
+  float:left;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 150px;
+  position: relative;
+  margin-left: 10px;
+  margin-right:10px;
+  margin-bottom: 5px;
+  margin-top:10px;
+  clear:both;
+  border-style: solid;
+  border-width: 3px;
+  border-color:#4aaaa5;
+  clear:right;
+
+  } 

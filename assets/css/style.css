@@ -1,12 +1,9 @@
 
-body 
-  {
-  
+.index
+ {
     font-size:24px;
     line-height: 24px; 
       /*line-height=space between text lines*/
-    color: #000000;
-      /*color of the text*/
     font-family: Helvetica;
       /*font of the text*/
     background-image: url("../images/cork-wallet.png");
@@ -14,10 +11,8 @@ body
 
 .header 
   {
-
-    float:left;
-      /*keeps the header to the left */
-    position: absolute;
+   
+    position: relative;
       /*unknown*/
     font-size:30px;
       /*size of the font*/
@@ -28,23 +23,20 @@ body
     background-color:#4aaaa5;
       /*background color of this container*/
     padding: 20px;
+    padding-right:200px;
       /*space around the content- confused as to why this bumps the "about me section".*/
-    margin-left: 51px;
+    margin-left: 25px;
       /*controling the margin on either side of the header- aka, how far it is from the sides*/
-    margin-right:100px;
+
       /*controling the margin on either side of the header- aka, how far it is from the sides*/
-    margin-top: 67px;
-     /*controling the margin on either side of the header- aka, how far it is from the sides*/
-  }
+    clear:both;}
+ 
 
 #navbar{ 
-  position: absolute;
+  position: static;
   list-style-type:none;
-  margin-top: 80px;
-  margin-right:200px;
+  margin-top: 30px;
   margin-left:420px;
-  float:right;
-
     }
 
 .navlink
@@ -97,7 +89,7 @@ border-right-width: 2px; }
 .mainbody
   {
     position:absolute;
-    clear:right;
+    clear:both;
     color:#777777;
       /*text color of container*/
     background-color:white;
@@ -106,7 +98,7 @@ border-right-width: 2px; }
       /*controls height of the container*/
     width:650px;
       /*controls width of container*/
-    margin-top:130px;
+    margin-top:80px;
       /*controls margin from top of page*/
     margin-left:50px;
     text-align: left;
@@ -159,7 +151,7 @@ border-right-width: 2px; }
       /*controls height of the container*/
     width: 270px;
       /*controls width of container*/
-    margin-top: 130px;
+    margin-top: 80px;
       /*controls margin from top of page*/
     margin-left:740px;
     text-align: left;
@@ -173,7 +165,31 @@ border-right-width: 2px; }
     overflow:scroll;
       /*creates a scrollable text box if the text is larger than the container height and width.*/
   }
-
+#connectwithmeport
+{
+    position:absolute;
+    color:#777777;
+      /*text color of container*/
+    background-color:white;
+      /*background color of container*/
+    height:auto;
+      /*controls height of the container*/
+    width: 270px;
+      /*controls width of container*/
+    margin-top: 80px;
+      /*controls margin from top of page*/
+ 
+    text-align: left;
+      /*how text is aligned in container*/
+    border-style: solid;
+      /*border Style*/
+    border-width: 2px; 
+      /*border thickness*/
+    border-color: #cccccc;
+      /*border color*/
+    overflow:scroll;
+      /*creates a scrollable text box if the text is larger than the container height and width.*/
+  }
 
 .p 
   {
@@ -266,30 +282,7 @@ border-right-width: 2px; }
 
 
   
-  }
-  .portfolioboxleft
-{
-    float:left;
-    color:#777777;
-      /*text color of container*/
-    background-color:white;
-      /*background color of container*/
-    height:100px;
-      /*controls height of the container*/
-    width: 200px;
-      /*controls width of container*/
 
-    margin-top: 10px;
-      /*controls margin from top of page*/
-    margin-left:20px;
-    text-align: left;
-      /*how text is aligned in container*/
-    border-style: solid;
-      /*border Style*/
-    border-width: 2px; 
-      /*border thickness*/
-    border-color: #cccccc;
-      /*border color*/}
 
   .portfoliobox
 {
@@ -375,24 +368,6 @@ border-right-width: 2px; }
   }   
 
 
-#mexico {
-  background-image: url("../images/IMG_1213.jpg");
-  background-size:contain;
-  transform:scale(20%);
-  float:right;
-  background-repeat: no-repeat;
-  width: 200px;
-  height: 150px;
-  position: absolute;
-  margin-left: 10px;
-  margin-right:10px;
-  margin-bottom: 5px;
-  margin-top:10px;
-  border-style: solid;
-  border-width: 3px;
-  border-color:#4aaaa5;
-  }   
-
   #poland {
   background-image: url("../images/imgp6640.jpg");
   background-size:contain;
@@ -456,26 +431,6 @@ border-right-width: 2px; }
 
   }     
 
-  #austria{
-  background-image: url("../images/imgp6336.jpg");
-  background-size:contain;
-  transform:scale(20%);
-  float:right;
-  background-repeat: no-repeat;
-  width: 200px;
-  height: 150px;
-  position: absolute;
-  margin-left: 10px;
-  margin-right:10px;
-  margin-bottom: 5px;
-  margin-top:10px;
-  clear:both;
-  border-style: solid;
-  border-width: 3px;
-  border-color:#4aaaa5;
-  
-   
-}
 
   #germany{
   background-image: url("../images/imgp5918.jpg");
@@ -498,23 +453,164 @@ border-right-width: 2px; }
 
   }   
 
-  #hungary{
-  background-image: url("../images/imgp6538.jpg");
-  background-size:contain;
-  transform:scale(20%);
-  float:left;
-  background-repeat: no-repeat;
-  width: 200px;
-  height: 150px;
-  position: relative;
-  margin-left: 10px;
-  margin-right:10px;
-  margin-bottom: 5px;
-  margin-top:10px;
+
+
+
+@media screen and (min-width:0px) and (max-width:639px) {
+.header 
+ {
+  text-align:right;
+  width:355px;
+  margin-top: 0px;
+  margin-left:20px;
+  padding-top:20px;
+
+  padding-bottom:20px;
+  }
+
+.mainbody{
+  align-content: center;
+  margin-top:75px;
+  width: 575px;
+  height:400px;
+  margin-right:200px;
+  margin-left:20px;
+clear:both;}
+
+.index{
+margin-top: 0px; 
+/*background-image: none;*/
+/*background-color: purple;*/
+overflow:scroll;
+  } 
+
+#connectwithme
+{ float:right;
   clear:both;
-  border-style: solid;
-  border-width: 3px;
-  border-color:#4aaaa5;
-  clear:right;
+  margin-top:500px;
+  margin-left: 20px;
+  margin-bottom:75px;
+  width: 575px;
+  border-style: none;
+  overflow:scroll;}
+
+
+#navbar{ 
+  position: absolute;
+  background-color:white;
+  list-style-type:none;
+  text-align:center;
+  width:575px;
+  margin-top: 0px;
+  margin-left:20px;
+  padding-top:20px;
+  padding-bottom:20px;
+  margin-right:200px;
+
+    }
+
+.navlink
+{
+padding-left:20px;
+padding-right:20px;}
+
+
+/*portfolio*/
+#ireland 
+
+.mainbody1{
+  margin-left: 200px;
+  width:300px;
+  clear:both;
+}
+#connectwithmeport
+{ 
+  margin-top:600px;
+  margin-left: 50px;
+  margin-bottom:75px;
+  width: 575px;
+  border-style: none;
+  overflow:scroll;}
+
+.portfolioboxleft {width:800px;
+height:400px;}
+
+.header1 {text-align:left;}
+
+
+
+@media screen and (min-width:640px) and (max-width:989px) 
+{
+.header {
+position:absolute;
+width:200px;
+text-align: center;
+padding:17px;
+margin-left:50px;
+margin-right:0px;
+clear:left;}
+
+.header1{text-align:left;
+  font-size:18px;
+}
+
+#navbar{ 
+  z-index: -1;
+  margin-top:20px; 
+  
+  position:absolute;
+  margin-left:50px;
+  margin-top:0px;
+  padding-top:12px;
+  padding-bottom: 20px;
+  padding-left:300px;
+  padding-right:60px;
+  clear:left;
+  background-color: white;}
+
+.index{
+margin-top: 0px; 
+/*background-image: none;*/
+/*background-color: blue;*/
+overflow:scroll;
+  } 
+
+
+.mainbody1{width:500px}
+
+@media screen and (min-width: 980px){
+
+.index{
+margin-top: 25px; 
+/*background-image: none;*/
+/*background-color: red;*/
 
   } 
+.header {
+position:absolute;
+width:200px;
+text-align: center;
+padding:17px;
+margin-left:50px;
+margin-right:0px;
+clear:left;}
+  
+#navbar{ 
+  z-index: -1;
+  margin-top:20px; 
+  width:400px;
+  float:right;
+  position:absolute;
+  margin-left:740px;
+  margin-top:0px;
+  padding-top:12px;
+  padding-bottom: 20px;
+  padding-left:10px;
+  padding-right:10px;
+  clear:left;
+  background-color: white;}
+
+#connectwithme
+{width:420px;}
+}
+
